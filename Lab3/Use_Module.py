@@ -17,3 +17,6 @@ print(f"The square root of {num1} is: {sqrt1}")
 print(f"{num1} raised to the power of {num2} is: {power}")
 print(f"The maximum of {num1} and {num2} is: {maximum}")
 print(f"The minimum of {num1} and {num2} is: {minimum}")
+
+from HandyMath import max, min
+
