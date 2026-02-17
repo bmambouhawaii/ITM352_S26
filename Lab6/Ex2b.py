@@ -74,3 +74,24 @@ def test_determine_progress(progress_function):
 if __name__ == "__main__":
     test_determine_progress(determine_progress1)
     test_determine_progress(determine_progress2)
+
+def determine_progress3(hits, spins):
+    if spins == 0:
+        return "Get going!"
+    
+    hits_spins_ratio = hits / spins
+    
+    if hits_spins_ratio < 0.5:
+        return "Keep practicing!"
+    elif hits_spins_ratio >= 0.5:
+        return "You win!"  
+    
+def determine_progress4(hits, spins):
+    if spins == 0:
+        return "Get going!"
+    
+    messages = ["Keep practicing!", "You win!"]
+    
+    index = int((hits / spins) >= 0.5)
+    
+    return messages[index]
