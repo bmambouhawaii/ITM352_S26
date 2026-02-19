@@ -5,4 +5,7 @@ while health > 0:
     damage = int(input("Enter damage taken: "))
     health -= damage
 
-    print("Game Over!")
+    print("I'm in the loop")
+
+    if health <= 0:
+        print("Game Over!")
