@@ -1,0 +1,6 @@
+Employee_ID,Age,Annual_Salary,Department_Code,Years_at_Company
+IT-1042,29,"$95,000",DEV-OPS,3
+IT-1085,42,"$145,000",CYBER-SEC,8
+IT-1121,35,"$118,000",CLOUD-ARC,5
+IT-1209,24,"$72,000",QA-TEST,1
+IT-1350,31,"$105,000",DATA-SCI,4
