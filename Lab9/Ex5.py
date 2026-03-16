@@ -1,7 +1,8 @@
 import json
 
-Questions = {
-     "song": "Love Yourself",
+Questions = [
+    {
+        "song": "Love Yourself",
         "options": ["A. Justin Bieber", "B. Drake", "C. Shawn Mendes", "D. The Weeknd"],
         "answer": "A"
     },
@@ -25,8 +26,9 @@ Questions = {
         "options": ["A. Katy Perry", "B. Lady Gaga", "C. Sia", "D. Pink"],
         "answer": "C"
     }
-}
+]
+
 filename = "questions.json"
 
-with open(filename, "w") as jsonfile:   
+with open(filename, "w") as jsonfile:
     json.dump(Questions, jsonfile)
