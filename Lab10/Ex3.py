@@ -8,7 +8,6 @@ data = {
    'Salary': [70000, 80000, 120000, 90000, 60000]
 }
 
-
 df = pd.DataFrame(data)
 
 #Display the DataFrame

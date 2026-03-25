@@ -24,7 +24,7 @@ df_big_properties["land_sqft"] = pd.to_numeric(df_big_properties["land_sqft"], e
 df_big_properties["gross_sqft"] = pd.to_numeric(df_big_properties["gross_sqft"], errors="coerce") 
 
 #Drop the rows with missing values in the relevant columns
-df_big_properties = df_big_properties.dropna()
+#df_big_properties = df_big_properties.dropna()
 
 #Drop duplicate rows
 df_big_properties = df_big_properties.drop_duplicates()
@@ -37,5 +37,5 @@ df_big_properties = df_big_properties[df_big_properties["sale_price"] > 0]
 print (df_big_properties.head(10))
 
 #Calculate the average sale price per square foot for the big properties
-average_price = (df_big_properties["sale_price"].mean()
-print (f"The mean sales price for the big properties is ${average_price:.2f}"))
+average_price = df_big_properties["sale_price"].mean()
+print(f"The mean sales price for the big properties is ${average_price:.2f}")
