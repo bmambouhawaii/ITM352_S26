@@ -23,4 +23,4 @@ print("Dimensions v2:", hh_income_array.shape)
 print ("Number of elements in the array:", hh_income_array.size)
 
 for i in range(len(hh_income_array)):
-    print(i, hh_income_array[i][0], hh_income_array[i][1])
+    print(hh_income_array[i][0], hh_income_array[i][1])
