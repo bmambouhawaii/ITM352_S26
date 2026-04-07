@@ -12,4 +12,4 @@ df = pd.read_csv(filename, engine='pyarrow')
 
 outfile= "sales_data_test.csv"
 
-
+df.head(10).to_csv(outfile, index=False)

@@ -24,13 +24,14 @@ state_col = 'customer_state'
 # Format floats to 2 decimal places
 pd.set_option("display.float_format", "{:,.2f}".format)
 
-pivot_table = df.pivot_table(
-    index=['sales_region', 'customer_state'],  # 👈 add state here
-    columns='order_type',
-    values='sales',
-    aggfunc=[np.sum, np.mean],  # 👈 small addition (this is the key part)
-    margins=True,
-    margins_name='Total Sales'
-)
+pivot_table = pd.pivot_table(df,
+                                values='sales',
+                                index= "customer_state",  # Use 'customer_state' as the index for the pivot table
+                                columns =['customer_type', 'order_type'],  # Create columns based on 'customer_type' and 'order_type'
+                                aggfunc=np.sum,  # Aggregate sales using the sum function
+                                fill_value=0,  # Fill missing values with 0
+                                margins=True,  # Add a total row and column
+                                margins_name='Total Sales')
+
 
 print(pivot_table)
