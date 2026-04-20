@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Who sang 'Closer'?",
+    "options": ["A. Drake", "B. The Chainsmokers", "C. Justin Bieber", "D. Rihanna"],
+    "answer": "B"
+  },
+  {
+    "question": "Who sang 'One Dance'?",
+    "options": ["A. Drake", "B. Post Malone", "C. Kanye West", "D. Travis Scott"],
+    "answer": "A"
+  },
+  {
+    "question": "Who sang 'Sorry'?",
+    "options": ["A. Justin Bieber", "B. Shawn Mendes", "C. Ed Sheeran", "D. Bruno Mars"],
+    "answer": "A"
+  },
+  {
+    "question": "Who sang 'Work'?",
+    "options": ["A. Beyoncé", "B. Rihanna", "C. Nicki Minaj", "D. Cardi B"],
+    "answer": "B"
+  },
+  {
+    "question": "Who sang 'Stressed Out'?",
+    "options": ["A. Imagine Dragons", "B. Twenty One Pilots", "C. Coldplay", "D. Maroon 5"],
+    "answer": "B"
+  }
+]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a href="/logout">Logout</a>
+<h1>Results</h1>
+<h2>Your Score: {{ score }}/{{ total }}</h2>
+
+{% for r in results %}
+    <div>
+        <p><strong>{{ r.question }}</strong></p>
+        <p>Your answer: {{ r.your_answer }}</p>
+        <p>Correct answer: {{ r.correct_answer }}</p>
+        <p>{{ r.explanation }}</p>
+
+        {% if r.correct %}
+            <p style="color:green;">Correct ✅</p>
+        {% else %}
+            <p style="color:red;">Wrong ❌</p>
+        {% endif %}
+    </div>
+    <hr>
+{% endfor %}
+
+<a href="/">Try Again</a>
+
+</body>
+</html>

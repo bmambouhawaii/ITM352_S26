@@ -1,0 +1,11 @@
+bev,3
+bev,3
+bev,3
+bev,1
+bev,1
+bev,5
+bev,5
+bev,5
+dre,4
+Titan,3
+Titan,3
