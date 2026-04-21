@@ -1,0 +1,37 @@
+#Create a chart of tips by payment type
+import matplotlib.pyplot as plt
+import pandas as pd 
+import numpy as np
+
+
+#Read in the data from JSON file
+trips_df = pd.read_json("../Trips from area 8.json")
+trip_miles_series = trips_df["trip_miles"]
+
+#Extract tips and payment type data
+tips_series = trips_df["tips"]
+payment_type_series = trips_df["payment_type"]
+
+#Clean up the data
+trips_df = trips_df.dropna()
+trips_df = trips_df.astype({'tips': float})
+trips_df = trips_df.set_index("payment_type")
+
+#Sum the tips by payment type
+tips_by_payment_type = trips_df.groupby("payment_type").sum()    
+
+x_labels = pd.Series(tips_by_payment_type.index.values)
+y_values = pd.Series(tips_by_payment_type["tips"].values)
+
+bars = np.array(range(len(x_labels)))
+plt.xticks(bars, x_labels,color= 'red', fontweight='bold')
+
+fig= plt.figure()
+
+#Create a histogram of the trip miles data
+plt.bar(bars, y_values)
+plt.title ("TaxiTips by Payment Type")
+plt.xlabel("Payment Type")
+plt.ylabel("Total Tips")
+
+plt.show()
