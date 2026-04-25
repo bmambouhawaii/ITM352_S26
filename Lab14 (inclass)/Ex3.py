@@ -5,7 +5,7 @@ import numpy as np
 
 
 #Read in the data from JSON file
-trips_df = pd.read_json("../Trips from area 8.json")
+trips_df = pd.read_json("Trips from area 8.json")
 trip_miles_series = trips_df["trip_miles"]
 
 #Extract tips and payment type data

@@ -15,4 +15,5 @@ plt.plot(trip_series, fare_series, linestyle= 'none', marker= 'v', color= 'c', a
 plt.title("Fares by Taxi Trip Miles")
 plt.xlabel("Trip Miles")
 plt.ylabel("Fares in $")
+plt.savefig("Fares by Taxi Trip Miles.png", dpi=300)
 plt.show()
